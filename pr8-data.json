@@ -1,0 +1,165 @@
+{
+  "section": "PR8",
+  "title": "Quadratic Inequalities",
+  "learningObjective": "Solve quadratic inequalities and express the solution graphically and with interval notation.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "category": "conceptual",
+      "question": "What is a quadratic inequality, and how is it different from a quadratic equation?",
+      "answer": "A quadratic inequality has the same kind of expression as a quadratic equation — \\( ax^2+bx+c \\) — but instead of setting it equal to 0, it compares that expression to 0 using \\( \\gt \\), \\( \\lt \\), \\( \\ge \\), or \\( \\le \\). An equation asks for the exact x-values that make the expression equal to zero (usually one or two answers); an inequality asks for every x-value that makes the expression positive, negative, or zero-or-more — usually a whole interval, or even two separate intervals, of infinitely many solutions.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( x^2-x-6=0 \\) is an equation with two solutions. \\( x^2-x-6 \\le 0 \\) is an inequality whose full solution is the entire interval \\( [-2,3] \\).</p></div>"
+    },
+    {
+      "id": "faq-2",
+      "category": "conceptual",
+      "question": "What are critical points (boundary points), and why do they matter for solving an inequality?",
+      "answer": "Critical points are the x-values that solve the MATCHING quadratic equation (the same expression, set equal to 0 instead of compared to 0) — they're exactly the x-intercepts of the parabola. They matter because they're the only places where the expression's sign can possibly switch from positive to negative or back again, so they're what splits the number line into the separate regions you need to test."
+    },
+    {
+      "id": "faq-3",
+      "category": "conceptual",
+      "question": "What is a sign chart, and what does it actually tell me?",
+      "answer": "A sign chart is a number line with the critical points marked on it, dividing it into regions, with a plus or minus sign written above each region to show whether the expression is positive or negative throughout that entire stretch. It's a visual shortcut: since the sign can only change AT a critical point, testing one single value anywhere inside a region tells you the sign for the WHOLE region, not just that one point.<div class=\"graph-wrap\"><svg viewBox=\"0 0 340 318\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><rect x=\"41.0\" y=\"74\" width=\"69.0\" height=\"228\" fill=\"#1a6b6b\" opacity=\"0.10\"/><rect x=\"110.0\" y=\"74\" width=\"120.0\" height=\"228\" fill=\"#D4622A\" opacity=\"0.10\"/><rect x=\"230.0\" y=\"74\" width=\"69.0\" height=\"228\" fill=\"#1a6b6b\" opacity=\"0.10\"/><line x1=\"41.0\" y1=\"230.0\" x2=\"299.0\" y2=\"230.0\" stroke=\"#94a3b8\" stroke-width=\"1.8\" /><line x1=\"80.0\" y1=\"74.0\" x2=\"80.0\" y2=\"302.0\" stroke=\"#94a3b8\" stroke-width=\"1.6\" /><polyline points=\"41.0,74.0 42.6,74.0 44.2,74.0 45.9,74.0 47.5,77.9 49.1,83.2 50.7,88.3 52.4,93.5 54.0,98.5 55.6,103.5 57.2,108.4 58.8,113.3 60.5,118.0 62.1,122.8 63.7,127.4 65.3,131.9 67.0,136.4 68.6,140.9 70.2,145.2 71.8,149.5 73.5,153.7 75.1,157.9 76.7,161.9 78.3,165.9 79.9,169.9 81.6,173.7 83.2,177.5 84.8,181.2 86.4,184.9 88.1,188.5 89.7,192.0 91.3,195.4 92.9,198.8 94.5,202.1 96.2,205.3 97.8,208.5 99.4,211.6 101.0,214.6 102.7,217.5 104.3,220.4 105.9,223.2 107.5,226.0 109.2,228.6 110.8,231.2 112.4,233.8 114.0,236.2 115.6,238.6 117.3,240.9 118.9,243.2 120.5,245.3 122.1,247.4 123.8,249.5 125.4,251.5 127.0,253.3 128.6,255.2 130.2,256.9 131.9,258.6 133.5,260.2 135.1,261.8 136.7,263.2 138.4,264.7 140.0,266.0 141.6,267.2 143.2,268.4 144.8,269.6 146.5,270.6 148.1,271.6 149.7,272.5 151.3,273.4 153.0,274.1 154.6,274.8 156.2,275.5 157.8,276.0 159.5,276.5 161.1,276.9 162.7,277.3 164.3,277.6 165.9,277.8 167.6,277.9 169.2,278.0 170.8,278.0 172.4,277.9 174.1,277.8 175.7,277.6 177.3,277.3 178.9,276.9 180.5,276.5 182.2,276.0 183.8,275.5 185.4,274.8 187.0,274.1 188.7,273.4 190.3,272.5 191.9,271.6 193.5,270.6 195.2,269.6 196.8,268.4 198.4,267.2 200.0,266.0 201.6,264.7 203.3,263.2 204.9,261.8 206.5,260.2 208.1,258.6 209.8,256.9 211.4,255.2 213.0,253.3 214.6,251.5 216.2,249.5 217.9,247.4 219.5,245.3 221.1,243.2 222.7,240.9 224.4,238.6 226.0,236.2 227.6,233.8 229.2,231.2 230.8,228.6 232.5,226.0 234.1,223.2 235.7,220.4 237.3,217.5 239.0,214.6 240.6,211.6 242.2,208.5 243.8,205.3 245.5,202.1 247.1,198.8 248.7,195.4 250.3,192.0 251.9,188.5 253.6,184.9 255.2,181.2 256.8,177.5 258.4,173.7 260.1,169.9 261.7,165.9 263.3,161.9 264.9,157.9 266.5,153.7 268.2,149.5 269.8,145.2 271.4,140.9 273.0,136.4 274.7,131.9 276.3,127.4 277.9,122.8 279.5,118.0 281.2,113.3 282.8,108.4 284.4,103.5 286.0,98.5 287.6,93.5 289.3,88.3 290.9,83.2 292.5,77.9 294.1,74.0 295.8,74.0 297.4,74.0 299.0,74.0\" fill=\"none\" stroke=\"#0a3f52\" stroke-width=\"3\"/><circle cx=\"110.0\" cy=\"230.0\" r=\"6\" fill=\"#0a3f52\"/><text x=\"110.0\" y=\"252.0\" font-size=\"12.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >x = 1</text><circle cx=\"230.0\" cy=\"230.0\" r=\"6\" fill=\"#0a3f52\"/><text x=\"230.0\" y=\"252.0\" font-size=\"12.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >x = 5</text><text x=\"60.5\" y=\"94.0\" font-size=\"13.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >f(x) > 0</text><text x=\"170.0\" y=\"94.0\" font-size=\"13.5\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >f(x) &lt; 0</text><text x=\"260.0\" y=\"94.0\" font-size=\"13.5\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >f(x) > 0</text><text x=\"170.0\" y=\"60.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >f(x) = x² − 6x + 5</text></svg></div><p class=\"graph-caption\">Reading straight off the graph: f(x) is zero exactly at the x-intercepts (x=1 and x=5), positive wherever the curve is above the x-axis, and negative wherever it dips below.</p>"
+    },
+    {
+      "id": "faq-4",
+      "category": "conceptual",
+      "question": "Why does the parabola's shape (opening up or down) determine where it's positive or negative?",
+      "answer": "A parabola crosses the x-axis at most twice, and between crossings it can't change sign without crossing again — so it's negative on one side of its vertex region and positive on the other, split cleanly by its zeros. An upward-opening parabola is negative only between its two zeros (where it dips below the axis) and positive everywhere outside them; a downward-opening parabola is exactly the reverse."
+    },
+    {
+      "id": "faq-5",
+      "category": "sticking-points",
+      "question": "How do I read a graph to determine where a quadratic function is positive, negative, or zero?",
+      "answer": "Find the x-intercepts first — the function is exactly zero there. Then look at whether the curve sits above or below the x-axis in each region between (and outside) those intercepts: above means positive, below means negative.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( f(x)=x^2-6x+5 \\), the x-intercepts are \\( x=1 \\) and \\( x=5 \\). The curve sits above the axis for \\( x\\lt 1 \\) and \\( x\\gt 5 \\) (positive there), and dips below between them (negative on \\( 1\\lt x\\lt 5 \\)).</p></div>"
+    },
+    {
+      "id": "faq-6",
+      "category": "sticking-points",
+      "question": "How do I set up a quadratic inequality so it's ready to solve algebraically?",
+      "answer": "Move every term to one side, leaving 0 alone on the other — exactly like preparing to factor a quadratic equation. Only after everything is on one side do the critical-point and sign-chart steps make sense.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( 2x^2-28\\lt 10x \\) becomes \\( 2x^2-10x-28\\lt 0 \\) after subtracting \\( 10x \\) from both sides.</p></div>"
+    },
+    {
+      "id": "faq-7",
+      "category": "sticking-points",
+      "question": "How do I find the critical points of a quadratic inequality?",
+      "answer": "Once everything is on one side (faq-6), factor the quadratic expression and set each factor equal to zero, exactly as you would to solve the matching quadratic equation.<div class=\"graph-wrap\"><svg viewBox=\"0 0 545 260\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\"><line x1=\"60.0\" y1=\"130.0\" x2=\"500.0\" y2=\"130.0\" stroke=\"#94a3b8\" stroke-width=\"2\" /><line x1=\"60.0\" y1=\"125.0\" x2=\"60.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"104.0\" y1=\"125.0\" x2=\"104.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"148.0\" y1=\"125.0\" x2=\"148.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"192.0\" y1=\"125.0\" x2=\"192.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"236.0\" y1=\"125.0\" x2=\"236.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"280.0\" y1=\"125.0\" x2=\"280.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"324.0\" y1=\"125.0\" x2=\"324.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"368.0\" y1=\"125.0\" x2=\"368.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"412.0\" y1=\"125.0\" x2=\"412.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"456.0\" y1=\"125.0\" x2=\"456.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><line x1=\"500.0\" y1=\"125.0\" x2=\"500.0\" y2=\"135.0\" stroke=\"#94a3b8\" stroke-width=\"1.4\" /><circle cx=\"192.0\" cy=\"130.0\" r=\"7\" fill=\"#0a3f52\"/><text x=\"192.0\" y=\"154.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >−4</text><line x1=\"192.0\" y1=\"75.0\" x2=\"192.0\" y2=\"185.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\" /><circle cx=\"456.0\" cy=\"130.0\" r=\"7\" fill=\"#0a3f52\"/><text x=\"456.0\" y=\"154.0\" font-size=\"13.5\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"middle\" >8</text><line x1=\"456.0\" y1=\"75.0\" x2=\"456.0\" y2=\"185.0\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"3,3\" /><circle cx=\"148.0\" cy=\"130.0\" r=\"4.5\" fill=\"#4a4a5a\"/><text x=\"148.0\" y=\"66.0\" font-size=\"20\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >+</text><circle cx=\"280.0\" cy=\"130.0\" r=\"4.5\" fill=\"#4a4a5a\"/><text x=\"280.0\" y=\"66.0\" font-size=\"20\" fill=\"#D4622A\" font-weight=\"700\" text-anchor=\"middle\" >−</text><circle cx=\"500.0\" cy=\"130.0\" r=\"4.5\" fill=\"#4a4a5a\"/><text x=\"500.0\" y=\"66.0\" font-size=\"20\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"middle\" >+</text><text x=\"126.0\" y=\"116.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >test −6:</text><text x=\"126.0\" y=\"128.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >(+28)</text><text x=\"324.0\" y=\"116.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >test 0:</text><text x=\"324.0\" y=\"128.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >(−32)</text><text x=\"478.0\" y=\"116.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >test 10:</text><text x=\"478.0\" y=\"128.0\" font-size=\"11\" fill=\"#4a4a5a\" font-weight=\"600\" text-anchor=\"middle\" >(+28)</text><line x1=\"60.0\" y1=\"175.0\" x2=\"192.0\" y2=\"175.0\" stroke=\"#1a6b6b\" stroke-width=\"5\" /><line x1=\"456.0\" y1=\"175.0\" x2=\"500.0\" y2=\"175.0\" stroke=\"#1a6b6b\" stroke-width=\"5\" /><text x=\"60.0\" y=\"194.0\" font-size=\"13\" fill=\"#1a6b6b\" font-weight=\"700\" text-anchor=\"start\" >solution: x ≤ −4 or x ≥ 8</text><text x=\"60.0\" y=\"44.0\" font-size=\"15\" fill=\"#0a3f52\" font-weight=\"700\" text-anchor=\"start\" >x² − 4x − 32 ≥ 0</text></svg></div><p class=\"graph-caption\">Critical points −4 and 8 split the number line into three regions. Testing one value from each region tells you the sign there; since the inequality is ≥ (not strict), the critical points themselves are included — shown here as solid dots and a closed interval.</p><div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( x^2-4x-32\\ge 0 \\) factors as \\( (x-8)(x+4)\\ge 0 \\), giving critical points \\( x=-4 \\) and \\( x=8 \\).</p></div>"
+    },
+    {
+      "id": "faq-8",
+      "category": "sticking-points",
+      "question": "How do I build a sign chart from the critical points?",
+      "answer": "Mark the critical points on a number line, which splits it into separate regions. Pick any convenient test value from inside each region, substitute it into the original expression, and record whether the result is positive or negative above that region.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">For \\( x^2-4x-32 \\), test \\( x=-6 \\) (left region): \\( 36+24-32=+28 \\) (positive). Test \\( x=0 \\) (middle region): \\( -32 \\) (negative). Test \\( x=10 \\) (right region): \\( 100-40-32=+28 \\) (positive).</p></div>"
+    },
+    {
+      "id": "faq-9",
+      "category": "sticking-points",
+      "question": "How do I decide whether the critical points themselves are included in the final solution?",
+      "answer": "Look at whether the original inequality is strict (\\( \\gt \\) or \\( \\lt \\)) or not (\\( \\ge \\) or \\( \\le \\)). A strict inequality EXCLUDES the critical points (open circles, parentheses) because they make the expression exactly 0, not strictly positive or negative. A non-strict inequality INCLUDES them (closed/solid circles, brackets) because 0 satisfies \\\"\\( \\ge 0 \\)\\\" or \\\"\\( \\le 0 \\)\\\" too.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( x^2-4x-32\\ge 0 \\): non-strict, so \\( -4 \\) and \\( 8 \\) are included — solid dots, closed brackets.</p><p class=\"math-line\">\\( 2x^2-28\\lt 10x \\): strict, so its critical points \\( -2 \\) and \\( 7 \\) are excluded — open circles, parentheses.</p></div>"
+    },
+    {
+      "id": "faq-10",
+      "category": "sticking-points",
+      "question": "How do I write the final solution in interval notation?",
+      "answer": "Read the sign chart from left to right, and include every region whose sign matches what the inequality asks for, joining separate pieces with a union symbol if needed. Use brackets or parentheses at each critical point according to faq-9.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( x^2-4x-32\\ge 0 \\): the sign chart is positive-negative-positive, and we want the positive regions (faq-8), so the solution is \\( (-\\infty,-4]\\cup[8,\\infty) \\).</p><p class=\"math-line\">\\( 2x^2-28\\lt 10x \\), i.e. \\( (x+2)(x-7)\\lt 0 \\): negative only in the middle region, so the solution is the single open interval \\( (-2,7) \\).</p></div>"
+    },
+    {
+      "id": "faq-11",
+      "category": "sticking-points",
+      "question": "How do I solve a quadratic inequality when the quadratic terms are on both sides, or mixed with other terms?",
+      "answer": "Combine like terms and move everything to one side first (faq-6), simplifying into the standard one-sided form before doing anything else — the critical-point and sign-chart process only applies once that's done.<div class=\"example-box\"><div class=\"label\">Worked Example</div><p class=\"math-line\">\\( 4x^2-6x-9\\lt x^2 \\) becomes \\( 3x^2-6x-9\\lt 0 \\) after subtracting \\( x^2 \\) from both sides, which factors as \\( 3(x+1)(x-3)\\lt 0 \\), giving critical points \\( -1 \\) and \\( 3 \\) and solution \\( (-1,3) \\).</p></div>"
+    },
+    {
+      "id": "faq-12",
+      "category": "connections",
+      "question": "How does this connect to PR3's zeros and the sign of a polynomial between its zeros?",
+      "answer": "This section is PR3's zero-and-sign behavior, put to direct use. A quadratic's critical points ARE its zeros from PR3, and the sign chart is exactly asking PR3's question — is the graph above or below the x-axis — in each region between consecutive zeros. Solving a quadratic inequality is really just reading off which of PR3's regions match the inequality you're given."
+    },
+    {
+      "id": "faq-13",
+      "category": "connections",
+      "question": "How does this connect to solving quadratic equations directly?",
+      "answer": "Every step of solving a quadratic inequality leans on quadratic-equation skills you already have: factoring (or the quadratic formula, when factoring isn't convenient) is exactly how you find the critical points in the first place. The inequality adds only two new steps on top of that equation-solving process — building the sign chart, and deciding whether to include the critical points themselves."
+    },
+    {
+      "id": "faq-14",
+      "category": "connections",
+      "question": "Why do quadratic inequalities matter beyond this course?",
+      "answer": "Any situation with a \"how much is enough\" or \"how much is too much\" question modeled by a quadratic relationship leads directly to a quadratic inequality — a projectile's height staying above a safe threshold, a company's profit remaining positive, or a structure's load staying within a safe range are all real examples. Whenever the question is a range of acceptable values rather than one exact answer, you're solving an inequality, not an equation."
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Solve a Quadratic Inequality: Factorable (Greater Than or Equal to Zero)",
+      "url": "https://youtu.be/KMURVjNzuxA",
+      "description": "Solving a factorable quadratic inequality using critical points and a sign chart, with the solution checked graphically.",
+      "category": "solving",
+      "relatedFaqs": [
+        "faq-7",
+        "faq-8",
+        "faq-9",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-2",
+      "title": "Solve a Quadratic Inequality — No Solution",
+      "url": "https://youtu.be/Q2h3HrTlc6c",
+      "description": "A quadratic inequality where no value of x satisfies the inequality — the sign chart never produces the sign being asked for.",
+      "category": "special-cases",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-10"
+      ]
+    },
+    {
+      "id": "vid-3",
+      "title": "Solve a Quadratic Inequality — All Real Numbers",
+      "url": "https://youtu.be/W-QY8ojvbW0",
+      "description": "A quadratic inequality satisfied by every real number — the sign chart shows the desired sign in every region.",
+      "category": "special-cases",
+      "relatedFaqs": [
+        "faq-8",
+        "faq-10"
+      ]
+    }
+  ],
+  "apps": [],
+  "prompts": {
+    "guided": [
+      {
+        "id": "prompt-1",
+        "title": "Practice Reading a Graph for Sign Information",
+        "prompt": "Describe a parabola to me (its x-intercepts and whether it opens up or down), and ask me to state where the function is positive, negative, and zero. Give me a few more examples of increasing difficulty."
+      },
+      {
+        "id": "prompt-2",
+        "title": "Practice the Full Sign-Chart Process",
+        "prompt": "Give me a quadratic inequality that isn't already set up with 0 on one side. Walk me through moving everything to one side, factoring, finding the critical points, building a sign chart by testing a value in each region, and writing the final answer in interval notation. Check my work at each step."
+      },
+      {
+        "id": "prompt-3",
+        "title": "Practice Strict vs. Non-Strict Inequalities",
+        "prompt": "Give me pairs of quadratic inequalities that use the same quadratic expression but different inequality symbols (one strict, one not). Ask me to solve both and explain exactly how the interval notation differs at the critical points. Check my reasoning."
+      },
+      {
+        "id": "prompt-4",
+        "title": "Practice Inequalities with Terms on Both Sides",
+        "prompt": "Give me a quadratic inequality with terms on both sides of the inequality sign, or mixed with other terms. Walk me through combining everything onto one side first, then solving it with the sign-chart method. Give me a few more examples and check my work."
+      },
+      {
+        "id": "prompt-5",
+        "title": "Connect This to PR3's Zeros and Sign Behavior",
+        "prompt": "I've learned in PR3 how to find a polynomial's zeros and read where it's positive or negative from its graph. Now I'm using that same idea to solve quadratic inequalities in PR8. Can you help me see exactly how a quadratic inequality's critical points and sign chart ARE PR3's zeros and sign regions, just being used to answer a different kind of question?"
+      }
+    ],
+    "open": [
+      {
+        "id": "open-1",
+        "title": "Create Your Own",
+        "prompt": "Use the AI tool of your choice. Start by describing what you're confused about or curious about from Section PR8 (Quadratic Inequalities). Ask the AI to help you explore that idea. Share what you learned and what surprised you."
+      }
+    ]
+  }
+}
